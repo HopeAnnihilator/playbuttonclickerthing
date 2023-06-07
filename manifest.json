@@ -1,0 +1,17 @@
+{
+    "name": "Training Clicker",
+    "description": "Clicks play button on video when pauses",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+      "16": "icon.png"
+    },
+    "content_scripts": [
+      {
+      "all_frames": true,
+      "matches": ["*://*.silkroad.com/*"],
+      "js": ["clicker.js"],
+      "run_at": "document_end"
+      }
+    ]
+  }
